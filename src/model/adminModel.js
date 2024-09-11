@@ -1,7 +1,7 @@
 const db = require('../config/database');
 const bcrypt = require('bcrypt');
 
-// create admin
+// create admin model
 const createAdmin = async (adminData) => {
   const { name, email, password } = adminData;
   const hashedPassword = await bcrypt.hash(password, 10);
