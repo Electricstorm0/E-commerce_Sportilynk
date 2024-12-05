@@ -15,7 +15,7 @@ const getAllUser = async () => {
   });
 };
 
-// get uset by email untuk mendapatkan user menggunakan email
+// get user by email untuk mendapatkan user menggunakan email
 const findUserByEmail = async (email) => {
   const query = 'SELECT * FROM user WHERE email=? ';
   return new Promise((resolve, reject) => {
